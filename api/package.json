@@ -1,5 +1,5 @@
 {
-  "name": "wavhub",
+  "name": "api",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
@@ -8,9 +8,11 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
+  "scripts": {
+    "watch": "bun run --hot app.ts"
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "hono": "^3.6.3"
+    "guid-typescript": "^1.0.9",
+    "jsonwebtoken": "^9.0.2"
   }
 }
